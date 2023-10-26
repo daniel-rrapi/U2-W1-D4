@@ -1,0 +1,89 @@
+#lavagna {
+    background-color: #666666;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+.yellow {
+    background-color: #fafac8;
+
+}
+
+.green {
+    background-color: #c8f7c9;
+}
+
+.violet {
+    background-color: #c7c6f5;
+}
+
+.postIt {
+    height: 300px;
+    width: 22%;
+    font-family: 'Indie Flower';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 1s;
+    box-shadow: 3px 5px 7px black;
+    cursor: context-menu;
+    user-select: none;
+}
+
+
+
+.postIt h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.postIt p {
+    font-size: 2rem;
+
+}
+
+.postIt:nth-of-type(1) {
+    transform: rotate(3deg);
+}
+
+.postIt:nth-of-type(2) {
+    transform: rotate(356deg);
+}
+
+.postIt:nth-of-type(3) {
+    transform: rotate(2deg);
+}
+
+.postIt:nth-of-type(4) {
+    transform: rotate(5deg);
+}
+
+.postIt:nth-of-type(5) {
+    transform: rotate(3deg);
+}
+
+.postIt:nth-of-type(6) {
+    transform: rotate(355deg);
+}
+
+.postIt:nth-of-type(7) {
+    transform: rotate(350deg);
+}
+
+.postIt:nth-of-type(8) {
+    transform: rotate(355deg);
+}
+
+.postIt:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    box-shadow: 8px 8px 7px black;
+}
